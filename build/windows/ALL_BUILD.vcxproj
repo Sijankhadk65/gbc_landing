@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|x64">
+      <Configuration>Profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0375DB47-1FDA-396B-BD32-599069480486}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\wamp64\www\gbc_landing\gbc_landing\windows\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/wamp64/www/gbc_landing/gbc_landing/windows/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/wamp64/www/gbc_landing/gbc_landing/windows -BC:/wamp64/www/gbc_landing/gbc_landing/build/windows --check-stamp-file C:/wamp64/www/gbc_landing/gbc_landing/build/windows/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\wamp64\www\gbc_landing\gbc_landing\build\windows\CMakeFiles\3.23.22060601-MSVC_2\CMakeCXXCompiler.cmake;C:\wamp64\www\gbc_landing\gbc_landing\build\windows\CMakeFiles\3.23.22060601-MSVC_2\CMakeRCCompiler.cmake;C:\wamp64\www\gbc_landing\gbc_landing\build\windows\CMakeFiles\3.23.22060601-MSVC_2\CMakeSystem.cmake;C:\wamp64\www\gbc_landing\gbc_landing\windows\flutter\generated_plugins.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\wamp64\www\gbc_landing\gbc_landing\build\windows\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Building Custom Rule C:/wamp64/www/gbc_landing/gbc_landing/windows/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/wamp64/www/gbc_landing/gbc_landing/windows -BC:/wamp64/www/gbc_landing/gbc_landing/build/windows --check-stamp-file C:/wamp64/www/gbc_landing/gbc_landing/build/windows/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\wamp64\www\gbc_landing\gbc_landing\build\windows\CMakeFiles\3.23.22060601-MSVC_2\CMakeCXXCompiler.cmake;C:\wamp64\www\gbc_landing\gbc_landing\build\windows\CMakeFiles\3.23.22060601-MSVC_2\CMakeRCCompiler.cmake;C:\wamp64\www\gbc_landing\gbc_landing\build\windows\CMakeFiles\3.23.22060601-MSVC_2\CMakeSystem.cmake;C:\wamp64\www\gbc_landing\gbc_landing\windows\flutter\generated_plugins.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\wamp64\www\gbc_landing\gbc_landing\build\windows\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/wamp64/www/gbc_landing/gbc_landing/windows/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/wamp64/www/gbc_landing/gbc_landing/windows -BC:/wamp64/www/gbc_landing/gbc_landing/build/windows --check-stamp-file C:/wamp64/www/gbc_landing/gbc_landing/build/windows/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\wamp64\www\gbc_landing\gbc_landing\build\windows\CMakeFiles\3.23.22060601-MSVC_2\CMakeCXXCompiler.cmake;C:\wamp64\www\gbc_landing\gbc_landing\build\windows\CMakeFiles\3.23.22060601-MSVC_2\CMakeRCCompiler.cmake;C:\wamp64\www\gbc_landing\gbc_landing\build\windows\CMakeFiles\3.23.22060601-MSVC_2\CMakeSystem.cmake;C:\wamp64\www\gbc_landing\gbc_landing\windows\flutter\generated_plugins.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\wamp64\www\gbc_landing\gbc_landing\build\windows\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\wamp64\www\gbc_landing\gbc_landing\build\windows\ZERO_CHECK.vcxproj">
+      <Project>{E33DD7DF-8C16-3EA9-B4DF-68158BE2E35A}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\wamp64\www\gbc_landing\gbc_landing\build\windows\flutter\flutter_wrapper_app.vcxproj">
+      <Project>{5D4574FE-671E-387C-A9B3-55F9A532EDF3}</Project>
+      <Name>flutter_wrapper_app</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\wamp64\www\gbc_landing\gbc_landing\build\windows\flutter\flutter_wrapper_plugin.vcxproj">
+      <Project>{5C8BC9C5-A5C7-33FB-902C-E01F9C97804F}</Project>
+      <Name>flutter_wrapper_plugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\wamp64\www\gbc_landing\gbc_landing\build\windows\runner\gbc_landing.vcxproj">
+      <Project>{E8FED530-166F-3970-96B1-196D5D67C941}</Project>
+      <Name>gbc_landing</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

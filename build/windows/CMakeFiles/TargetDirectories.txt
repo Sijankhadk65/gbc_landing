@@ -1,0 +1,10 @@
+C:/wamp64/www/gbc_landing/gbc_landing/build/windows/CMakeFiles/INSTALL.dir
+C:/wamp64/www/gbc_landing/gbc_landing/build/windows/CMakeFiles/ALL_BUILD.dir
+C:/wamp64/www/gbc_landing/gbc_landing/build/windows/CMakeFiles/ZERO_CHECK.dir
+C:/wamp64/www/gbc_landing/gbc_landing/build/windows/flutter/CMakeFiles/flutter_wrapper_plugin.dir
+C:/wamp64/www/gbc_landing/gbc_landing/build/windows/flutter/CMakeFiles/flutter_wrapper_app.dir
+C:/wamp64/www/gbc_landing/gbc_landing/build/windows/flutter/CMakeFiles/flutter_assemble.dir
+C:/wamp64/www/gbc_landing/gbc_landing/build/windows/flutter/CMakeFiles/INSTALL.dir
+C:/wamp64/www/gbc_landing/gbc_landing/build/windows/runner/CMakeFiles/gbc_landing.dir
+C:/wamp64/www/gbc_landing/gbc_landing/build/windows/runner/CMakeFiles/INSTALL.dir
+C:/wamp64/www/gbc_landing/gbc_landing/build/windows/runner/CMakeFiles/ALL_BUILD.dir

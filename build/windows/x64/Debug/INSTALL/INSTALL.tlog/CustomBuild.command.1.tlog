@@ -1,0 +1,10 @@
+^C:\WAMP64\WWW\GBC_LANDING\GBC_LANDING\BUILD\WINDOWS\CMAKEFILES\83E5B30A92DFC647C0D60A080D59384D\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
