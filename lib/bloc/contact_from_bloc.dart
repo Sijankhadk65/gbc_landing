@@ -46,9 +46,11 @@ class ContactFormBloc {
     _request.write(json.encode(body));
 
     HttpClientResponse _response = await _request.close();
-    utf8.decoder.bind(_response).transform(StreamTransformer.fromHandlers(
-          handleData: (data, sink) {},
-        ));
+    utf8.decoder.bind(_response).transform(
+          StreamTransformer.fromHandlers(
+            handleData: (data, sink) {},
+          ),
+        );
     // var url = Uri.http('localhost:8000');
     // var response = await http.post(
     //   url,
