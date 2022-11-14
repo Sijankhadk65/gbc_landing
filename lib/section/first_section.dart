@@ -31,7 +31,9 @@ class FirstSection extends StatelessWidget {
                     "What we do?",
                     style: TextStyle(
                       fontFamily: "Jiho",
-                      fontSize: appConstraints.maxWidth > 450 ? 35 : 22.5,
+                      fontSize: appConstraints.maxWidth > 1440
+                          ? 35
+                          : 35 - (appConstraints.maxWidth / 350),
                       color: Colors.green,
                     ),
                   ),
@@ -40,7 +42,9 @@ class FirstSection extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: GoogleFonts.barlow(
                       fontWeight: FontWeight.w300,
-                      fontSize: appConstraints.maxWidth > 450 ? 25 : 14.5,
+                      fontSize: appConstraints.maxWidth > 1440
+                          ? 25
+                          : 25 - (appConstraints.maxWidth / 500),
                     ),
                   ),
                   SizedBox.fromSize(
@@ -53,7 +57,9 @@ class FirstSection extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: GoogleFonts.barlow(
                       fontWeight: FontWeight.w300,
-                      fontSize: appConstraints.maxWidth > 450 ? 25 : 14.5,
+                      fontSize: appConstraints.maxWidth > 1440
+                          ? 25
+                          : 25 - (appConstraints.maxWidth / 500),
                     ),
                   ),
                   SizedBox.fromSize(
@@ -66,7 +72,9 @@ class FirstSection extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: GoogleFonts.barlow(
                       fontWeight: FontWeight.w300,
-                      fontSize: appConstraints.maxWidth > 450 ? 25 : 14.5,
+                      fontSize: appConstraints.maxWidth > 1440
+                          ? 25
+                          : 25 - (appConstraints.maxWidth / 500),
                     ),
                   ),
                 ],

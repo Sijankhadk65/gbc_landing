@@ -40,13 +40,16 @@ class _MyHomePageState extends State<MyHomePage> {
           backgroundColor: Colors.white,
           leading: Container(),
           title: Row(
+            // direction: Axis.horizontal,
             children: [
               Image.asset(
                 'assets/png/logo.png',
                 fit: BoxFit.contain,
                 height: 50,
               ),
+
               const Spacer(),
+
               ...constraints.maxWidth > 450
                   ? [
                       InkWell(
@@ -99,7 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ]
                   : [],
-              SizedBox.fromSize(size: const Size(50, 50))
+              // SizedBox.fromSize(size: const Size(50, 50))
             ],
           ),
           actions: constraints.maxWidth > 450

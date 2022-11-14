@@ -36,15 +36,23 @@ class ModalCard extends StatelessWidget {
           Expanded(
             child: Padding(
               padding: EdgeInsets.only(
-                left: appConstraints.maxWidth > 450 ? 60 : 80,
-                right: appConstraints.maxWidth > 450 ? 60 : 80,
+                left: appConstraints.maxWidth > 800
+                    ? 50 - (appConstraints.maxWidth / 500)
+                    : 80,
+                right: appConstraints.maxWidth > 800
+                    ? 50 - (appConstraints.maxWidth / 500)
+                    : 80,
                 // top: appConstraints.maxWidth > 450 ? 0 : 30,
               ),
               child: Text(
-                description,
+                appConstraints.maxWidth > 800
+                    ? description
+                    : "${description.substring(0, 100)}...",
                 style: GoogleFonts.barlow(
                   fontWeight: FontWeight.w300,
-                  fontSize: appConstraints.maxWidth > 450 ? 18 : 9,
+                  fontSize: appConstraints.maxWidth > 800
+                      ? 13 - (appConstraints.maxWidth / 800)
+                      : 9,
                 ),
                 textAlign: TextAlign.center,
               ),
@@ -55,7 +63,9 @@ class ModalCard extends StatelessWidget {
               label,
               style: TextStyle(
                 fontFamily: "Jiho",
-                fontSize: appConstraints.maxWidth > 450 ? 20 : 10,
+                fontSize: appConstraints.maxWidth > 800
+                    ? 20 - (appConstraints.maxWidth / 800)
+                    : 10,
                 fontWeight: FontWeight.w300,
                 color: const Color(0xFF00963F),
               ),

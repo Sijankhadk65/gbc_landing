@@ -15,7 +15,11 @@ class MyApp extends StatelessWidget {
       ),
       scrollBehavior: AppScrollBehavior(),
       debugShowCheckedModeBanner: false,
+      // routes: {
+      //   "/": (context) => const MyHomePage(title: "GBC"),
+      // },
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      // initialRoute: '/',
     );
   }
 }

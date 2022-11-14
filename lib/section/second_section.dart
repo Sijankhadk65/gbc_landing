@@ -25,7 +25,9 @@ class SecondSection extends StatelessWidget {
             textAlign: TextAlign.center,
             style: TextStyle(
               fontFamily: "Jiho",
-              fontSize: appConstraints.maxWidth > 450 ? 35 : 15.5,
+              fontSize: appConstraints.maxWidth > 800
+                  ? 35
+                  : 35 - (appConstraints.maxWidth / 350),
               color: const Color(0xFF00963F),
             ),
           ),
